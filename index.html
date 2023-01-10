@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>:: Guessing_Game ::</title>
+</head>
+
+<body>
+
+    <!-- <div id="particles-js" class="particle"></div> -->
+
+    <main>
+        <div id="welcome_screen">
+
+            <h2>Guess The Random Number Between 1-100</h2>
+
+            <section class="eventSection">
+                <p>Select The Difficulty Level</p>
+                <div class="button-wrapper">
+                    <button id="easy">Easy 10 Attempts</button>
+                    <button id="medium">Hard 5 Attempts</button>
+                    <button id="hard">Extreme 3 Attempts</button>
+                </div>
+            </section>
+
+        </div>
+        <!-- ==========  Actual Game Area ==================== -->
+        <div id="gameArea">
+           
+
+            <section>
+                <h3 id="textOp">Your Guess</h3>
+                <input type="number"
+                id="inputBox"
+                min="1"
+                max="100"
+                placeholder="Put digit & hit enter.."
+                >
+            </section>
+
+            <section class="gameStats">
+                <div class="info">
+                    <p>Number of Previous Attempts you tried</p>
+                    <span id="attempts">
+                        0
+                    </span>
+                </div>
+                <div class="info">
+                    <p>Number of Previous Guesses you tried</p>
+                    <span id="guesses">
+                        0
+                    </span>
+                </div>
+            </section>
+            <div id="newGameButton">
+                <button id="restart">Restart</button>
+            </div>
+        </div>
+
+    </main>
+
+
+   
+    <!-- JS  -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
